@@ -1,1 +1,138 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+.container #carouselExampleIndicators {
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .carousel-item img {
+      max-width: 100%;
+      height: 300px;
+      object-fit: contain;
+    }
+    
+    .carousel-text {
+      padding: 20px;
+      text-align: left;
+      font-size: 1rem;
+      color: #333;
+    }
+    
+    @media (max-width: 768px) {
+      .carousel-item .row {
+        flex-direction: column;
+      }
+    
+      .carousel-item img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .carousel-text {
+        padding: 0;
+        text-align: center;
+      }
+    }
+    /* Stylizacja dla przycisków przewijania w karuzeli */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #2c1B01; /* Zmiana koloru tła ikony */
+    border-radius: 50%; /* Opcjonalnie: Zaokrąglenie ikon dla lepszego efektu */
+    opacity: 0.3;
+  }
+  
+  /* Opcjonalnie: Zmiana koloru przycisku na hover */
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #2c1B01; /* Zmiana koloru przycisku na ciemniejszy szary przy najechaniu */
+    opacity: 0.3;
+  }
+  /* Zmiana koloru wskaźników na szary */
+  .carousel-indicators [data-bs-target] {
+      background-color:#2c1B01; /* Zmiana koloru wskaźników */
+    }
+    
+    /* Zmiana koloru aktywnego wskaźnika na ciemniejszy szary */
+    .carousel-indicators .active {
+      background-color:#2c1B01; /* Kolor aktywnego wskaźnika */
+    }
+    .cart-area.d-n{
+      display:block;
+  }
+  
+  .cart-area i{
+      font-size:22px;
+      float:left;
+      margin-top:16px;
+      color:#0d6efd;
+      margin-left:15px
+  
+  }
+  
+  /* --------------- */
+  
+  .cart-area {
+    border: 1px solid #ddd; /* Dodaje obramowanie do całego obszaru koszyka */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Tło dla lepszego kontrastu */
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between; /* Oddziela cenę od ilości */
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #333; 
+  }
+  
+  .quantity {
+    /* background-color: #ddd; */
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #333; 
+  }
+  .cart-area a {
+    text-decoration: none;
+  }
+  
+  
+  /* middle PRODUCST */
+  
+  .navbar-list {
+    display: flex; /* Używamy Flexboxa do ułożenia elementów w jednej linii */
+    justify-content: space-around; /* Równomierne rozmieszczenie napisów */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    padding: 20px; /* Dodanie odstępu wokół napisów */
+    width: 100%; /* Szerokość dla poprawnego wyśrodkowania */
+  }
+  
+  .navbar-list li {
+    margin: 0 10px; /* Odstępy między elementami listy */
+  }
+  
+  .navbar-list a {
+    text-decoration: none; /* Usunięcie podkreślenia z linków */
+    font-size: 18px; /* Wielkość czcionki */
+    color: #333; /* Kolor tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+  }
+  
+  .navbar-list a:hover {
+    color: #007bff; /* Kolor na hover */
+    transition: color 0.3s; /* Płynne przejście koloru na hover */
+  }
+  /* ------------------- */
+  .menu-sidebar {
+    display: flex; /* Używamy Flexboxa dla całego kontenera */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+  }
+  /* MENU SIDBAR */
+  
+  
