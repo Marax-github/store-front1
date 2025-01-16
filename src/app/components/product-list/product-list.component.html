@@ -1,0 +1,26 @@
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <!-- Pętla *ngFor tworzy kolumny -->
+            <div class="col" *ngFor="let tempProduct of products">
+                <div class="card shadow-sm" style="min-height: 350px;"> <!-- Zmniejszamy minimalną wysokość karty -->
+                    <img src="{{tempProduct.imageUrl}}" alt="mugs" style="object-fit: cover;"> <!-- Zmniejszamy rozmiar obrazu -->
+                    <div class="card-body">
+                        <h5>{{tempProduct.name}}</h5> <!-- Zmniejszamy rozmiar nagłówka -->
+                        <p class="card-text" style="font-size: 0.9rem;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary"><h5>{{tempProduct.unitPrice | currency: "USD"}}</h5></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
